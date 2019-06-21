@@ -8542,7 +8542,7 @@ if (inBrowser) {
 
 var _default = Vue;
 exports.default = _default;
-},{}],"../../../../../.nvm/versions/node/v12.2.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{}],"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -8574,7 +8574,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../.nvm/versions/node/v12.2.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -8609,7 +8609,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../.nvm/versions/node/v12.2.0/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/vue-hot-reload-api/dist/index.js":[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = Object.create(null)
@@ -8882,13 +8882,17 @@ function patchScopedSlots (instance) {
   }
 }
 
-},{}],"src/App.vue":[function(require,module,exports) {
+},{}],"src/landingtitle.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+//
+//
+//
+//
 //
 //
 //
@@ -8902,28 +8906,51 @@ var _default = {
   }
 };
 exports.default = _default;
-        var $d61a68 = exports.default || module.exports;
+        var $8d596f = exports.default || module.exports;
       
-      if (typeof $d61a68 === 'function') {
-        $d61a68 = $d61a68.options;
+      if (typeof $8d596f === 'function') {
+        $8d596f = $8d596f.options;
       }
     
         /* template */
-        Object.assign($d61a68, (function () {
+        Object.assign($8d596f, (function () {
           var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v(_vm._s(_vm.message))])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "landing-title" } }, [
+      _c(
+        "h1",
+        {
+          staticStyle: {
+            "font-weight": "bold",
+            "text-align": "center",
+            "font-size": "50px"
+          }
+        },
+        [_vm._v("Welcome to CardGen")]
+      ),
+      _vm._v(" "),
+      _c("h3", { staticStyle: { "text-align": "center" } }, [
+        _vm._v("Easy-to-use name card generator")
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
           return {
             render: render,
             staticRenderFns: staticRenderFns,
             _compiled: true,
-            _scopeId: "data-v-d61a68",
+            _scopeId: "data-v-8d596f",
             functional: undefined
           };
         })());
@@ -8936,9 +8963,9 @@ render._withStripped = true
         if (api.compatible) {
           module.hot.accept();
           if (!module.hot.data) {
-            api.createRecord('$d61a68', $d61a68);
+            api.createRecord('$8d596f', $8d596f);
           } else {
-            api.reload('$d61a68', $d61a68);
+            api.reload('$8d596f', $8d596f);
           }
         }
 
@@ -8949,7 +8976,698 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../.nvm/versions/node/v12.2.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/main.js":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/landingbody.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  components: {},
+  data: function data() {
+    return {
+      message: 'Hello World'
+    };
+  }
+};
+exports.default = _default;
+        var $491fd2 = exports.default || module.exports;
+      
+      if (typeof $491fd2 === 'function') {
+        $491fd2 = $491fd2.options;
+      }
+    
+        /* template */
+        Object.assign($491fd2, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "d-flex justify-content-between forms" }, [
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-header" }, [
+          _c("h3", [_vm._v("Sign In")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body" }, [
+          _c("form", [
+            _c("div", { staticClass: "input-group form-group" }, [
+              _c("div", { staticClass: "input-group-prepend" }, [
+                _c("span", { staticClass: "input-group-text" }, [
+                  _c("i", { staticClass: "fas fa-user" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", placeholder: "username" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "input-group form-group" }, [
+              _c("div", { staticClass: "input-group-prepend" }, [
+                _c("span", { staticClass: "input-group-text" }, [
+                  _c("i", { staticClass: "fas fa-key" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "password", placeholder: "password" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row align-items-center remember" }, [
+              _c("input", { attrs: { type: "checkbox" } }),
+              _vm._v("Remember Me\n           ")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("input", {
+                staticClass: "btn float-right login_btn",
+                attrs: { type: "submit", value: "Login" }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-footer" }, [
+          _c("div", { staticClass: "d-flex justify-content-center links" }, [
+            _vm._v("\n           Don't have an account?"),
+            _c("a", { attrs: { href: "#" } }, [_vm._v("Sign Up")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "d-flex justify-content-center" }, [
+            _c("a", { attrs: { href: "#" } }, [_vm._v("Forgot your password?")])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-header" }, [
+          _c("h3", [_vm._v("Register")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body" }, [
+          _c("form", [
+            _c("div", { staticClass: "input-group form-group" }, [
+              _c("div", { staticClass: "input-group-prepend" }, [
+                _c("span", { staticClass: "input-group-text" }, [
+                  _c("i", { staticClass: "fas fa-user" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", placeholder: "first name" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "input-group form-group" }, [
+              _c("div", { staticClass: "input-group-prepend" }, [
+                _c("span", { staticClass: "input-group-text" }, [
+                  _c("i", { staticClass: "fas fa-user" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", placeholder: "last name" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "input-group form-group" }, [
+              _c("div", { staticClass: "input-group-prepend" }, [
+                _c("span", { staticClass: "input-group-text" }, [
+                  _c("i", { staticClass: "fas fa-user" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "text", placeholder: "username" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "input-group form-group" }, [
+              _c("div", { staticClass: "input-group-prepend" }, [
+                _c("span", { staticClass: "input-group-text" }, [
+                  _c("i", { staticClass: "fas fa-key" })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "form-control",
+                attrs: { type: "password", placeholder: "password" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row align-items-center remember" }, [
+              _c("input", { attrs: { type: "checkbox" } }),
+              _vm._v("Remember Me\n             ")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-group" }, [
+              _c("input", {
+                staticClass: "btn float-right login_btn",
+                attrs: { type: "submit", value: "Register" }
+              })
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-491fd2",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$491fd2', $491fd2);
+          } else {
+            api.reload('$491fd2', $491fd2);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/createcard.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  components: {},
+  data: function data() {
+    return {
+      message: 'Hello World'
+    };
+  }
+};
+exports.default = _default;
+        var $351422 = exports.default || module.exports;
+      
+      if (typeof $351422 === 'function') {
+        $351422 = $351422.options;
+      }
+    
+        /* template */
+        Object.assign($351422, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col" }, [
+      _c("div", { attrs: { id: "content-create" } }, [
+        _c("div", { staticClass: "content-title" }, [
+          _c("h2", [_vm._v("Create a name card.")])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-351422",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$351422', $351422);
+          } else {
+            api.reload('$351422', $351422);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/listCard.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  components: {},
+  data: function data() {
+    return {
+      message: 'Hello World'
+    };
+  }
+};
+exports.default = _default;
+        var $2bdea1 = exports.default || module.exports;
+      
+      if (typeof $2bdea1 === 'function') {
+        $2bdea1 = $2bdea1.options;
+      }
+    
+        /* template */
+        Object.assign($2bdea1, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col" }, [
+      _c("div", { attrs: { id: "content-list" } }, [
+        _c("div", { staticClass: "content-title" }, [
+          _c("h2", [_vm._v("Your created cards.")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "list-body" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col" }, [
+                _c("div", { staticClass: "list-card" }, [
+                  _vm._v("\n                CARD HERE\n              ")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col" }, [
+                _c("div", { staticClass: "list-card" }, [
+                  _vm._v("\n                CARD HERE\n              ")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col" }, [
+                _c("div", { staticClass: "list-card" }, [
+                  _vm._v("\n                CARD HERE\n              ")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col" }, [
+                _c("div", { staticClass: "list-card" }, [
+                  _vm._v("\n                CARD HERE\n              ")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col" }, [
+                _c("div", { staticClass: "list-card" }, [
+                  _vm._v("\n                CARD HERE\n              ")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col" }, [
+                _c("div", { staticClass: "list-card" }, [
+                  _vm._v("\n                CARD HERE\n              ")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col" }, [
+                _c("div", { staticClass: "list-card" }, [
+                  _vm._v("\n                CARD HERE\n              ")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col" }, [
+                _c("div", { staticClass: "list-card" }, [
+                  _vm._v("\n                CARD HERE\n              ")
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-2bdea1",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$2bdea1', $2bdea1);
+          } else {
+            api.reload('$2bdea1', $2bdea1);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/App.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _landingtitle = _interopRequireDefault(require("./landingtitle"));
+
+var _landingbody = _interopRequireDefault(require("./landingbody"));
+
+var _createcard = _interopRequireDefault(require("./createcard"));
+
+var _listCard = _interopRequireDefault(require("./listCard"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  components: {
+    landingTitle: _landingtitle.default,
+    landingBody: _landingbody.default,
+    createCard: _createcard.default,
+    listCard: _listCard.default
+  },
+  data: function data() {
+    return {
+      message: 'Hello World'
+    };
+  }
+};
+exports.default = _default;
+        var $d719ef = exports.default || module.exports;
+      
+      if (typeof $d719ef === 'function') {
+        $d719ef = $d719ef.options;
+      }
+    
+        /* template */
+        Object.assign($d719ef, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { attrs: { id: "landing-page" } }, [
+      _c(
+        "div",
+        { staticClass: "container" },
+        [_c("landingTitle"), _vm._v(" "), _c("landingBody")],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { attrs: { id: "content" } }, [
+      _c(
+        "div",
+        { staticClass: "row" },
+        [_c("createCard"), _vm._v(" "), _c("listCard")],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-d719ef",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$d719ef', $d719ef);
+          } else {
+            api.reload('$d719ef', $d719ef);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"./landingtitle":"src/landingtitle.vue","./landingbody":"src/landingbody.vue","./createcard":"src/createcard.vue","./listCard":"src/listCard.vue","_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/main.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -8959,7 +9677,7 @@ var _App = _interopRequireDefault(require("./App.vue"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 new _vue.default(_App.default).$mount('#app');
-},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","./App.vue":"src/App.vue"}],"../../../../../.nvm/versions/node/v12.2.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"vue":"node_modules/vue/dist/vue.runtime.esm.js","./App.vue":"src/App.vue"}],"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -8987,7 +9705,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44683" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43685" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -9162,5 +9880,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../.nvm/versions/node/v12.2.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/main.js"], null)
+},{}]},{},["../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/main.js"], null)
 //# sourceMappingURL=/main.1e43358e.js.map

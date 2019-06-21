@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+/******* LANDING PAGE *******/
+html{
+  overflow-x: hidden;
+}
+
+#landing-page {
+  background-image: url('/bg-masthead.6e230cc3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Numans', sans-serif;
+  background-color: blue;
+}
+
+#landing-page .container{
+  height: 60%;
+  float: right;
+  margin-right: 50px;
+  position: relative;
+  top: 19%;
+  align-content: center;
+}
+
+#landing-page .card{
+  height: 380px;
+  width: 410px;
+  background-color: rgba(0,0,0,0.7) !important;
+  box-shadow: 0 0 10px #000000;
+}
+
+#landing-page .forms {
+  margin-top: 50px;
+}
+
+
+#landing-page .social_icon span:hover{
+  color: white;
+  cursor: pointer;
+}
+
+#landing-page .card-header h3{
+  color: white; 
+  text-align: center;
+}
+
+#landing-page .social_icon{
+  position: absolute;
+  right: 20px;
+  top: -45px;
+}
+
+#landing-page .input-group-prepend span{
+  width: 50px;
+  background-color: #FFC312;
+  color: black;
+  border:0 !important;
+}
+
+#landing-page input:focus {
+  box-shadow: 0 0 20px rgba(81, 203, 238, 1);
+  border: 2px solid rgba(81, 203, 238, 1);
+}
+
+#landing-page .remember{
+  color: white;
+}
+
+#landing-page .remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.login_btn{
+  color: black;
+  background-color: #FFC312;
+  width: 100px;
+}
+
+.login_btn:hover{
+  color: black;
+  background-color: white;
+}
+
+#landing-page .links{
+  color: white; 
+}
+
+#landing-page .links a{
+  margin-left: 4px;
+}
+
+/************* MAIN CONTENT *************/
+
+#content {
+  background-image: url('/bg-callout.b69bdde7.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Numans', sans-serif;
+}
+
+#content-create{
+  background-color: rgba(241, 237, 237, 0.7);
+  height: 70vh;
+  position:relative;
+  top: 20%;
+  box-shadow: 0 0 10px #000000;
+  margin-right: 30px;
+  border-radius: 3px;
+}
+
+
+
+#content-list {
+  background-color: rgba(0,0,0,0.7);
+  height: 90vh;
+  position: relative;
+  top: 8%;
+  box-shadow: 0 0 10px #000000;
+  border-radius: 3px;
+}
+
+.content-title {
+  text-align:center;
+  padding: 20px;
+}
+      
+.content-title h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#content-list h2 {
+  color: whitesmoke;
+}
+
+.list-body {
+  background-color: white;
+  height: 80%;
+  overflow: auto;
+}
+
+.list-card {
+  border: 2px solid black;
+  height: 170px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=/style.967ba849.css.map */
