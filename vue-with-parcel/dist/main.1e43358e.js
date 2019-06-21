@@ -8976,7 +8976,260 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/landingbody.vue":[function(require,module,exports) {
+},{"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/login.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = {
+  components: {},
+  data: function data() {
+    return {
+      message: 'Hello World',
+      loginEmail: '',
+      loginPass: ''
+    };
+  },
+  methods: {
+    loginDetail: function loginDetail() {
+      this.$emit('kirimlogin', {
+        email: this.loginEmail,
+        password: this.loginPass
+      });
+    }
+  }
+};
+exports.default = _default;
+        var $883129 = exports.default || module.exports;
+      
+      if (typeof $883129 === 'function') {
+        $883129 = $883129.options;
+      }
+    
+        /* template */
+        Object.assign($883129, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "card" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-body" }, [
+      _c(
+        "form",
+        {
+          attrs: { method: "post" },
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.loginDetail($event)
+            }
+          }
+        },
+        [
+          _c("div", { staticClass: "input-group form-group" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.loginEmail,
+                  expression: "loginEmail"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "email" },
+              domProps: { value: _vm.loginEmail },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.loginEmail = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "input-group form-group" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.loginPass,
+                  expression: "loginPass"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "password", placeholder: "password" },
+              domProps: { value: _vm.loginPass },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.loginPass = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _vm._m(3),
+          _vm._v(" "),
+          _vm._m(4)
+        ]
+      )
+    ]),
+    _vm._v(" "),
+    _vm._m(5)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h3", [_vm._v("Sign In")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c("span", { staticClass: "input-group-text" }, [
+        _c("i", { staticClass: "fas fa-user" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c("span", { staticClass: "input-group-text" }, [
+        _c("i", { staticClass: "fas fa-key" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row align-items-center remember" }, [
+      _c("input", { attrs: { type: "checkbox" } }),
+      _vm._v("Remember Me\n           ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "btn float-right login_btn",
+        attrs: { type: "submit", value: "Login" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-footer" }, [
+      _c("div", { staticClass: "d-flex justify-content-center links" }, [
+        _vm._v("\n           Don't have an account?"),
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Sign Up")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "d-flex justify-content-center" }, [
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Forgot your password?")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-883129",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$883129', $883129);
+          } else {
+            api.reload('$883129', $883129);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/register.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9026,39 +9279,284 @@ exports.default = void 0;
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+var _default = {
+  components: {},
+  data: function data() {
+    return {
+      registerFN: '',
+      registerLN: '',
+      registerEmail: '',
+      registerPass: ''
+    };
+  },
+  methods: {
+    registerDetail: function registerDetail() {
+      this.$emit('kirimregister', {
+        firstName: this.registerFN,
+        lastName: this.registerLN,
+        email: this.registerEmail,
+        password: this.registerPass
+      });
+    }
+  }
+};
+exports.default = _default;
+        var $0ae191 = exports.default || module.exports;
+      
+      if (typeof $0ae191 === 'function') {
+        $0ae191 = $0ae191.options;
+      }
+    
+        /* template */
+        Object.assign($0ae191, (function () {
+          var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "card" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-body" }, [
+      _c(
+        "form",
+        {
+          attrs: { method: "POST" },
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.registerDetail($event)
+            }
+          }
+        },
+        [
+          _c("div", { staticClass: "input-group form-group" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.registerFN,
+                  expression: "registerFN"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "first name" },
+              domProps: { value: _vm.registerFN },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.registerFN = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "input-group form-group" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.registerLN,
+                  expression: "registerLN"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "last name" },
+              domProps: { value: _vm.registerLN },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.registerLN = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "input-group form-group" }, [
+            _vm._m(3),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.registerEmail,
+                  expression: "registerEmail"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "email" },
+              domProps: { value: _vm.registerEmail },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.registerEmail = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "input-group form-group" }, [
+            _vm._m(4),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.registerPass,
+                  expression: "registerPass"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { type: "password", placeholder: "password" },
+              domProps: { value: _vm.registerPass },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.registerPass = $event.target.value
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _vm._m(6)
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h3", [_vm._v("Register")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c("span", { staticClass: "input-group-text" }, [
+        _c("i", { staticClass: "fas fa-user" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c("span", { staticClass: "input-group-text" }, [
+        _c("i", { staticClass: "fas fa-user" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c("span", { staticClass: "input-group-text" }, [
+        _c("i", { staticClass: "fas fa-user" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c("span", { staticClass: "input-group-text" }, [
+        _c("i", { staticClass: "fas fa-key" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row align-items-center remember" }, [
+      _c("input", { attrs: { type: "checkbox" } }),
+      _vm._v("Remember Me\n           ")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group" }, [
+      _c("input", {
+        staticClass: "btn float-right login_btn",
+        attrs: { type: "submit", value: "Register" }
+      })
+    ])
+  }
+]
+render._withStripped = true
+
+          return {
+            render: render,
+            staticRenderFns: staticRenderFns,
+            _compiled: true,
+            _scopeId: "data-v-0ae191",
+            functional: undefined
+          };
+        })());
+      
+    /* hot reload */
+    (function () {
+      if (module.hot) {
+        var api = require('vue-hot-reload-api');
+        api.install(require('vue'));
+        if (api.compatible) {
+          module.hot.accept();
+          if (!module.hot.data) {
+            api.createRecord('$0ae191', $0ae191);
+          } else {
+            api.reload('$0ae191', $0ae191);
+          }
+        }
+
+        
+        var reloadCSS = require('_css_loader');
+        module.hot.dispose(reloadCSS);
+        module.hot.accept(reloadCSS);
+      
+      }
+    })();
+},{"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/landingbody.vue":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _login = _interopRequireDefault(require("./login"));
+
+var _register = _interopRequireDefault(require("./register"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 //
 //
 //
@@ -9067,11 +9565,54 @@ exports.default = void 0;
 //
 //
 var _default = {
-  components: {},
+  components: {
+    loginForm: _login.default,
+    registerForm: _register.default
+  },
   data: function data() {
     return {
-      message: 'Hello World'
+      isLoggedIn: false
     };
+  },
+  methods: {
+    loginUser: function loginUser(user) {
+      var _this = this;
+
+      axios({
+        method: 'POST',
+        url: 'http://localhost:3000/login',
+        data: {
+          email: user.email,
+          password: user.password
+        }
+      }).then(function (_ref) {
+        var data = _ref.data;
+        localStorage.setItem('token', data.token); // console.log('success login')
+
+        _this.$emit('statuslogin', {
+          status: _this.isLoggedIn
+        });
+      }).catch(function (err) {
+        console.log(err);
+      });
+    },
+    registerUser: function registerUser(user) {
+      axios({
+        method: 'POST',
+        url: 'http://localhost:3000/register',
+        data: {
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email,
+          password: user.password
+        }
+      }).then(function (_ref2) {
+        var data = _ref2.data;
+        console.log(data);
+      }).catch(function (err) {
+        console.log(err);
+      });
+    }
   }
 };
 exports.default = _default;
@@ -9087,149 +9628,18 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "d-flex justify-content-between forms" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h3", [_vm._v("Sign In")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("form", [
-            _c("div", { staticClass: "input-group form-group" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _c("i", { staticClass: "fas fa-user" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "username" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group form-group" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _c("i", { staticClass: "fas fa-key" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "password", placeholder: "password" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row align-items-center remember" }, [
-              _c("input", { attrs: { type: "checkbox" } }),
-              _vm._v("Remember Me\n           ")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("input", {
-                staticClass: "btn float-right login_btn",
-                attrs: { type: "submit", value: "Login" }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-footer" }, [
-          _c("div", { staticClass: "d-flex justify-content-center links" }, [
-            _vm._v("\n           Don't have an account?"),
-            _c("a", { attrs: { href: "#" } }, [_vm._v("Sign Up")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "d-flex justify-content-center" }, [
-            _c("a", { attrs: { href: "#" } }, [_vm._v("Forgot your password?")])
-          ])
-        ])
-      ]),
+  return _c(
+    "div",
+    { staticClass: "d-flex justify-content-between forms" },
+    [
+      _c("loginForm", { on: { kirimlogin: _vm.loginUser } }),
       _vm._v(" "),
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h3", [_vm._v("Register")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("form", [
-            _c("div", { staticClass: "input-group form-group" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _c("i", { staticClass: "fas fa-user" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "first name" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group form-group" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _c("i", { staticClass: "fas fa-user" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "last name" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group form-group" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _c("i", { staticClass: "fas fa-user" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "username" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group form-group" }, [
-              _c("div", { staticClass: "input-group-prepend" }, [
-                _c("span", { staticClass: "input-group-text" }, [
-                  _c("i", { staticClass: "fas fa-key" })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "password", placeholder: "password" }
-              })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row align-items-center remember" }, [
-              _c("input", { attrs: { type: "checkbox" } }),
-              _vm._v("Remember Me\n             ")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "form-group" }, [
-              _c("input", {
-                staticClass: "btn float-right login_btn",
-                attrs: { type: "submit", value: "Register" }
-              })
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
+      _c("registerForm", { on: { kirimregister: _vm.registerUser } })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
           return {
@@ -9262,7 +9672,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/createcard.vue":[function(require,module,exports) {
+},{"./login":"src/login.vue","./register":"src/register.vue","_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/createcard.vue":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9419,7 +9829,6 @@ exports.default = void 0;
 //
 //
 //
-//
 var _default = {
   components: {},
   data: function data() {
@@ -9457,57 +9866,243 @@ var staticRenderFns = [
         _c("div", { staticClass: "list-body" }, [
           _c("div", { staticClass: "container" }, [
             _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col" }, [
-                _c("div", { staticClass: "list-card" }, [
-                  _vm._v("\n                CARD HERE\n              ")
+              _c("div", { staticClass: "col-sm-6" }, [
+                _c("div", { staticClass: "card" }, [
+                  _c("img", {
+                    staticClass: "card-img-top",
+                    staticStyle: { height: "200px" },
+                    attrs: {
+                      src:
+                        "http://www.eatlogos.com/business_cards/png/business_card_design_png.png",
+                      alt: "Card image cap"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "a",
+                      {
+                        staticStyle: {
+                          "background-color": "#3b5998",
+                          color: "white",
+                          margin: "5px",
+                          padding: "10px 20px",
+                          "border-radius": "5px"
+                        },
+                        attrs: {
+                          id: "facebook-share",
+                          href:
+                            "https://www.facebook.com/sharer/sharer.php?u=${this.imageUrl}",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fab fa-facebook-square" }),
+                        _vm._v(" Share on Facebook")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Delete")]
+                    )
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col" }, [
-                _c("div", { staticClass: "list-card" }, [
-                  _vm._v("\n                CARD HERE\n              ")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col" }, [
-                _c("div", { staticClass: "list-card" }, [
-                  _vm._v("\n                CARD HERE\n              ")
+              _c("div", { staticClass: "col-sm-6" }, [
+                _c("div", { staticClass: "card" }, [
+                  _c("img", {
+                    staticClass: "card-img-top",
+                    staticStyle: { height: "200px" },
+                    attrs: {
+                      src:
+                        "http://www.eatlogos.com/business_cards/png/business_card_design_png.png",
+                      alt: "Card image cap"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "a",
+                      {
+                        staticStyle: {
+                          "background-color": "#3b5998",
+                          color: "white",
+                          margin: "5px",
+                          padding: "10px 20px",
+                          "border-radius": "5px"
+                        },
+                        attrs: {
+                          id: "facebook-share",
+                          href:
+                            "https://www.facebook.com/sharer/sharer.php?u=${this.imageUrl}",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fab fa-facebook-square" }),
+                        _vm._v(" Share on Facebook")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Delete")]
+                    )
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col" }, [
-                _c("div", { staticClass: "list-card" }, [
-                  _vm._v("\n                CARD HERE\n              ")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col" }, [
-                _c("div", { staticClass: "list-card" }, [
-                  _vm._v("\n                CARD HERE\n              ")
+              _c("div", { staticClass: "col-sm-6" }, [
+                _c("div", { staticClass: "card" }, [
+                  _c("img", {
+                    staticClass: "card-img-top",
+                    staticStyle: { height: "200px" },
+                    attrs: {
+                      src:
+                        "http://www.eatlogos.com/business_cards/png/business_card_design_png.png",
+                      alt: "Card image cap"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "a",
+                      {
+                        staticStyle: {
+                          "background-color": "#3b5998",
+                          color: "white",
+                          margin: "5px",
+                          padding: "10px 20px",
+                          "border-radius": "5px"
+                        },
+                        attrs: {
+                          id: "facebook-share",
+                          href:
+                            "https://www.facebook.com/sharer/sharer.php?u=${this.imageUrl}",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fab fa-facebook-square" }),
+                        _vm._v(" Share on Facebook")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Delete")]
+                    )
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col" }, [
-                _c("div", { staticClass: "list-card" }, [
-                  _vm._v("\n                CARD HERE\n              ")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col" }, [
-                _c("div", { staticClass: "list-card" }, [
-                  _vm._v("\n                CARD HERE\n              ")
+              _c("div", { staticClass: "col-sm-6" }, [
+                _c("div", { staticClass: "card" }, [
+                  _c("img", {
+                    staticClass: "card-img-top",
+                    staticStyle: { height: "200px" },
+                    attrs: {
+                      src:
+                        "http://www.eatlogos.com/business_cards/png/business_card_design_png.png",
+                      alt: "Card image cap"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "a",
+                      {
+                        staticStyle: {
+                          "background-color": "#3b5998",
+                          color: "white",
+                          margin: "5px",
+                          padding: "10px 20px",
+                          "border-radius": "5px"
+                        },
+                        attrs: {
+                          id: "facebook-share",
+                          href:
+                            "https://www.facebook.com/sharer/sharer.php?u=${this.imageUrl}",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fab fa-facebook-square" }),
+                        _vm._v(" Share on Facebook")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Delete")]
+                    )
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "col" }, [
-                _c("div", { staticClass: "list-card" }, [
-                  _vm._v("\n                CARD HERE\n              ")
+              _c("div", { staticClass: "col-sm-6" }, [
+                _c("div", { staticClass: "card" }, [
+                  _c("img", {
+                    staticClass: "card-img-top",
+                    staticStyle: { height: "200px" },
+                    attrs: {
+                      src:
+                        "http://www.eatlogos.com/business_cards/png/business_card_design_png.png",
+                      alt: "Card image cap"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c(
+                      "a",
+                      {
+                        staticStyle: {
+                          "background-color": "#3b5998",
+                          color: "white",
+                          margin: "5px",
+                          padding: "10px 20px",
+                          "border-radius": "5px"
+                        },
+                        attrs: {
+                          id: "facebook-share",
+                          href:
+                            "https://www.facebook.com/sharer/sharer.php?u=${this.imageUrl}",
+                          target: "_blank"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "fab fa-facebook-square" }),
+                        _vm._v(" Share on Facebook")
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-danger",
+                        attrs: { type: "button" }
+                      },
+                      [_vm._v("Delete")]
+                    )
+                  ])
                 ])
               ])
             ])
@@ -9565,8 +10160,16 @@ var _createcard = _interopRequireDefault(require("./createcard"));
 
 var _listCard = _interopRequireDefault(require("./listCard"));
 
+var _login = _interopRequireDefault(require("./login"));
+
+var _register = _interopRequireDefault(require("./register"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//
+//
+//
+//
 //
 //
 //
@@ -9593,12 +10196,52 @@ var _default = {
     landingTitle: _landingtitle.default,
     landingBody: _landingbody.default,
     createCard: _createcard.default,
-    listCard: _listCard.default
+    listCard: _listCard.default,
+    loginForm: _login.default,
+    registerForm: _register.default
   },
   data: function data() {
     return {
-      message: 'Hello World'
+      isLoggedIn: false
     };
+  },
+  methods: {
+    loginUser: function loginUser(user) {
+      var _this = this;
+
+      axios({
+        method: 'POST',
+        url: 'http://localhost:3000/login',
+        data: {
+          email: user.email,
+          password: user.password
+        }
+      }).then(function (_ref) {
+        var data = _ref.data;
+        localStorage.setItem('token', data.token);
+        _this.isLoggedIn = true;
+        Swal.fire('Succesfully signed in');
+      }).catch(function (err) {
+        swal.fire('Username/password wrong');
+      });
+    },
+    registerUser: function registerUser(user) {
+      axios({
+        method: 'POST',
+        url: 'http://localhost:3000/register',
+        data: {
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email,
+          password: user.password
+        }
+      }).then(function (_ref2) {
+        var data = _ref2.data;
+        Swal.fire('Succesfully registered');
+      }).catch(function (err) {
+        swal.fire(err.response.data.msg);
+      });
+    }
   }
 };
 exports.default = _default;
@@ -9615,23 +10258,47 @@ exports.default = _default;
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { attrs: { id: "landing-page" } }, [
-      _c(
-        "div",
-        { staticClass: "container" },
-        [_c("landingTitle"), _vm._v(" "), _c("landingBody")],
-        1
-      )
-    ]),
+    _c(
+      "div",
+      {
+        class: _vm.isLoggedIn ? "hide" : "show",
+        attrs: { id: "landing-page" }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "container" },
+          [
+            _c("landingTitle"),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "d-flex justify-content-between forms" },
+              [
+                _c("loginForm", { on: { kirimlogin: _vm.loginUser } }),
+                _vm._v(" "),
+                _c("registerForm", { on: { kirimregister: _vm.registerUser } })
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ]
+    ),
     _vm._v(" "),
-    _c("div", { attrs: { id: "content" } }, [
-      _c(
-        "div",
-        { staticClass: "row" },
-        [_c("createCard"), _vm._v(" "), _c("listCard")],
-        1
-      )
-    ])
+    _c(
+      "div",
+      { class: _vm.isLoggedIn ? "show" : "hide", attrs: { id: "content" } },
+      [
+        _c(
+          "div",
+          { staticClass: "row" },
+          [_c("createCard"), _vm._v(" "), _c("listCard")],
+          1
+        )
+      ]
+    )
   ])
 }
 var staticRenderFns = []
@@ -9667,7 +10334,7 @@ render._withStripped = true
       
       }
     })();
-},{"./landingtitle":"src/landingtitle.vue","./landingbody":"src/landingbody.vue","./createcard":"src/createcard.vue","./listCard":"src/listCard.vue","_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/main.js":[function(require,module,exports) {
+},{"./landingtitle":"src/landingtitle.vue","./landingbody":"src/landingbody.vue","./createcard":"src/createcard.vue","./listCard":"src/listCard.vue","./login":"src/login.vue","./register":"src/register.vue","_css_loader":"../../../../../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js","vue-hot-reload-api":"node_modules/vue-hot-reload-api/dist/index.js","vue":"node_modules/vue/dist/vue.runtime.esm.js"}],"src/main.js":[function(require,module,exports) {
 "use strict";
 
 var _vue = _interopRequireDefault(require("vue"));
@@ -9705,7 +10372,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38857" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38073" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

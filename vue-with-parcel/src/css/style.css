@@ -9,7 +9,7 @@ html{
   background-image: url('./img/bg-masthead.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   font-family: 'Numans', sans-serif;
   background-color: blue;
 }
@@ -99,12 +99,23 @@ html{
   background-image: url('./img/bg-callout.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   font-family: 'Numans', sans-serif;
+  transition: height 0.3s ease-out;
+}
+
+.hide {
+  height: 0vh;
+  overflow: hidden;
+  /* display: none; */
+}
+
+.show {
+  height: 100vh;
 }
 
 #content-create{
-  background-color: rgba(241, 237, 237, 0.7);
+  background-color: rgba(241, 237, 237, 0.78);
   height: 70vh;
   position:relative;
   top: 20%;
@@ -116,7 +127,7 @@ html{
 
 
 #content-list {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.78);
   height: 90vh;
   position: relative;
   top: 8%;
@@ -139,13 +150,22 @@ html{
 }
 
 .list-body {
-  background-color: white;
-  height: 80%;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 95%;
+  margin: auto;
+  padding: 15px;
+  height: 78%;
   overflow: auto;
 }
 
-.list-card {
-  border: 2px solid black;
-  height: 170px;
-  margin: 5px;
+#content-list .card {
+  box-shadow: 0 0 3px #000000;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 10px;
+  margin-top: 25px;
+}
+
+.card a {
+  text-decoration: none !important;  
 }

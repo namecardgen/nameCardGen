@@ -37,14 +37,7 @@ let userSchema = new Schema({
     },
     password: {
         type: String,
-        required: [ true, 'Password is required' ],
-        validate: {
-        validator: function(input) {
-            if (input.length > 7 && input.length < 14) return true
-            else return false
-        },
-        message: props => `Password length must be between 8 to 13`
-        }
+        required: [ true, 'Password is required' ]
     }
 })
 
