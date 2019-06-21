@@ -80,10 +80,13 @@ export default {
       console.log('masuk capture')
       html2canvas(document.getElementById('card-canvas'))
       .then(canvas => {
-        // let base64URL = canvas.toDataURL('image/png')
+        let base64URL = canvas.toDataURL('image/png')
+        // console.log(base64URL)
+
+        this.$emit('upload', base64URL)
         let a = document.createElement('a');
-        a.href = canvas.toDataURL('image/jpg').replace('image/jpeg', "image/octet-stream")
-        a.download = 'card.jpg'
+        // a.href = canvas.toDataURL('image/jpg').replace('image/jpeg', "image/octet-stream")
+        a.download = 'card.png'
         a.click()
       })
     },

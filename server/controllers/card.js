@@ -22,10 +22,8 @@ class CardController{
 
     static create(req,res,next){
         let newCard = new Card({
-            title : req.body.title,
+            title : req.loggedUser.id,
             image : req.file.cloudStoragePublicUrl,
-            created_at : new Date(),
-            userId : req.loggedUser.id  
         })
         newCard.save()
         .then(data =>{

@@ -1,7 +1,7 @@
 <template>
 
   <div>
-    <div id="landing-page" v-bind:class=" isLoggedIn ? 'hide' : 'show'">
+    <div id="landing-page" v-if="!isLoggedIn">
       <div class="container">
         <landingTitle></landingTitle>
         <!-- <landingBody></landingBody> -->
@@ -12,9 +12,9 @@
       </div>
     </div>
 
-    <div id="content" v-bind:class=" isLoggedIn ? 'show' : 'hide'">
+    <div id="content" v-if="isLoggedIn">
       <div class = "row">
-        <createCard></createCard>
+        <createCard v-on:upload="uploadImg"></createCard>
         <listCard></listCard>
       </div>
     </div>
@@ -47,6 +47,16 @@ export default {
           isLoggedIn: true,
           asset : asset
         }
+    },
+    created: function() {
+      let token = localStorage.token
+
+      if(token) {
+        this.isLoggedIn = true
+      } 
+      else {
+        this.isLoggedIn = false
+      }
     },
     methods: {
         loginUser(user) {
@@ -85,6 +95,27 @@ export default {
             })
             .catch(err => {
                 swal.fire(err.response.data.msg)
+            })
+        },
+
+        uploadImg(src) {
+          // console.log(src, '==========')
+        
+          axios({ 
+            method: 'POST',
+            url: 'http://localhost:3000/cards',
+            data: {
+              image: src,
+            },
+            headers: {
+              token: localStorage.getItem('token')
+            }
+          })
+            .then(({data}) => {
+              console.log(data)
+            })
+            .catch(err => {
+              console.log(err)
             })
         }
     }

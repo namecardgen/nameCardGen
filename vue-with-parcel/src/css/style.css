@@ -9,7 +9,7 @@ html{
   background-image: url('./img/bg-masthead.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  /* height: 100vh; */
+  height: 100vh;
   font-family: 'Numans', sans-serif;
   background-color: blue;
 }
@@ -99,7 +99,7 @@ html{
   background-image: url('./img/bg-callout.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  /* height: 100vh; */
+  height: 100vh;
   font-family: 'Numans', sans-serif;
   transition: height 0.3s ease-out;
 }

@@ -13,7 +13,7 @@
                   <img class="card-img-top" src="http://www.eatlogos.com/business_cards/png/business_card_design_png.png" style="height:200px;" alt="Card image cap">
                   <div class="card-body">
                     <a id="facebook-share" href="https://www.facebook.com/sharer/sharer.php?u=${this.imageUrl}" target="_blank" style="background-color: #3b5998; color: white; margin: 5px; padding: 10px 20px; border-radius: 5px;"><i class="fab fa-facebook-square"></i> Share on Facebook</a>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-danger">test</button>
                   </div>
                 </div>
               </div>
