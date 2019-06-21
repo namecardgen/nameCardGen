@@ -1,0 +1,136 @@
+#card-canvas {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+  color: black;
+}
+
+.image {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.text {
+  position: absolute;
+  white-space: nowrap;
+}
+/* 
+.bg-img1 {
+  background-image: url('../images/backgroud-1.jpg')
+}
+
+.bg-img2 {
+  background-image: url('../images/backgroud-2.jpg')
+}
+
+.bg-img3 {
+  background-image: url('../images/backgroud-3.jpg')
+} */
+
+.name1 {
+  top: 5px;
+  font-size: 24px;
+  left: 55%;
+}
+
+.name2 {
+  top: 60%;
+  font-size: 16px;
+  font-weight: bolder;
+  left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.name3 {
+  left: 55%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  top: 25%;
+}
+
+.position1 {
+  top: 35px;
+  font-size: 12px;
+  left: 55%;
+}
+
+.position2 {
+  top: 70%;
+  font-size: 16px;
+  left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.position3 {
+  left: 55%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 14px;
+  top: 40%;
+}
+
+.email1 {
+  top: 40%;
+  font-size: 11px;
+  left: 55%;
+}
+
+.email2 {
+  top: 85%;
+  font-size: 12px;
+  left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.email3 {
+  left: 55%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 12px;
+  top: 48%;
+}
+
+.company1 {
+  top: 60%;
+  font-weight: bold;
+  font-size: 14px;
+  left: 55%;
+}
+
+.company2 {
+  top: 5px;
+  font-size: 30px;
+  left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.company3 {
+  left: 5%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 24px;
+  top: 27%;
+}
+
+.address1 {
+  top: 65%;
+  font-size: 12px;
+  left: 55%;
+}
+
+.address2 {
+  top: 25px;
+  font-size: 12px;
+  left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.address3 {
+  left: 5%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 11px;
+  top: 35%;
+}

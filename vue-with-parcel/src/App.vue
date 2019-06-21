@@ -28,6 +28,7 @@ import landingTitle from "./landingtitle";
 import landingBody from "./landingbody";
 import createCard from "./createcard";
 import listCard from "./listCard"
+import asset from '../asset/*.*'
 
 import loginForm from "./login"
 import registerForm from "./register"
@@ -43,7 +44,8 @@ export default {
     },
     data(){
         return {
-          isLoggedIn: false,
+          isLoggedIn: true,
+          asset : asset
         }
     },
     methods: {
